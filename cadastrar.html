@@ -10,20 +10,19 @@
     </head>
 
     <body>
-        <nav>
+        <nav class="red darken-3">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">LaunchNet</a>
+                <a href="#" class="brand-logo">PizzaNet</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/">Tarefas</a></li>
-                    <li class="active"><a href="cadastrar.html">Criar tarefas</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="cadastrar.html">Criar Cardápio</a></li>
                 </ul>
             </div>
         </nav>
         
     
         <main class="container">
-            <h4>Cadastrar Tarefas</h4>
+            <h4>Cadastrar Item</h4>
 
             <div class="row">
                 <div class="col s12">
@@ -31,7 +30,7 @@
                         <div class="input-field col s12">
                             <input id="titulo" type="text" class="validate" minlength="3">
                             <label for="titulo">Titulo</label>
-                            <span class="helper-text" data-error="Título muito curto. Preencha o título com pelo menos 3 caracteres" data-success="right">Digite o título da tarefa</span>
+                            <span class="helper-text" data-error="Título muito curto. Preencha o título com pelo menos 3 caracteres" data-success="right">Digite o nome do item</span>
                         </div>
                     </div>
                     <div class="row">
@@ -43,18 +42,18 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="pontos" type="number" class="validate" min="1" max="100">
-                            <label for="pontos">Pontos</label>
+                            <label for="pontos">Valor</label>
                             <span 
                                 class="helper-text" 
                                 data-error="Pontuação valida. Informe o valor entre 1 e 100" 
                                 data-success="right">
-                                Digite a pontuação da tarefa
+                                Digite o valor do item
                             </span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="index.html" class="btn red">Cancelar</a>
+                            <a href="cardapio.html" class="btn red">Cancelar</a>
                         </div>
                         <div class="col">
                             <button id="botao-cadastrar" class="btn green">Salvar</a>
@@ -62,9 +61,10 @@
                     </div>
 
                 </div>
+
             </div>
 
         </main>
-    
+        
     </body>
 </html>
