@@ -11,11 +11,11 @@ function criarCard(tarefa){
     card.classList.add("col", "s12", "m6", "l4")
 
     card.innerHTML = `
-        <div class="card ${tarefa.concluida ? 'grey': ''}">
+        <div class="card ${tarefa.concluida ? 'green lighten-4': ''}">
             <div class="card-content">
                 <span class="card-title">${tarefa.titulo}</span>
                 <p>${tarefa.descricao}</p>
-                <span data-badge-caption="pontos" class="badge blue white-text">${tarefa.pontos}</span>
+                <span data-badge-caption="R$" class="badge blue white-text">${tarefa.pontos}</span>
             </div>
             <div class="card-action">
                 <a href="#" class="btn red" onClick="apagar(${tarefa.id})">
